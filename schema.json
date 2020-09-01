@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "The Root Schema",
+  "properties": {
+    "term": {
+      "type": "string",
+      "title": "Search term",
+      "default": "",
+      "pattern": "^[a-zA-Z0-9]+$"
+    }
+  },
+  "required": ["term"]
+}
