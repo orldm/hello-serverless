@@ -1,0 +1,26 @@
+{
+  "name": "hello_serverless",
+  "version": "1.0.0",
+  "description": "An example project with AWS Lambda & API gateway",
+  "dependencies": {
+    "node-fetch": "^2.6.0",
+    "node-xlsx": "^0.15.0",
+    "uuid": "^8.3.0"
+  },
+  "devDependencies": {
+    "prettier": "2.1.1"
+  },
+  "scripts": {
+    "deploy": "sls deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orldm/hello-serverless.git"
+  },
+  "author": "Dmytro Orlov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/orldm/hello-serverless/issues"
+  },
+  "homepage": "https://github.com/orldm/hello-serverless#readme"
+}
