@@ -5,11 +5,6 @@ const uuid = require("uuid");
 const AWS = require("aws-sdk");
 const xlsx = require("node-xlsx");
 
-AWS.config.update({
-  accessKeyId: "AKIAXJ4ONMAH6KXQFD4X",
-  secretAccessKey: "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",
-});
-
 const dynamoDb = new AWS.DynamoDB.DocumentClient();
 
 const params = {
