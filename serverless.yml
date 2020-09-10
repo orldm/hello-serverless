@@ -32,6 +32,7 @@ provider:
   region: us-east-1
   environment:
     DYNAMODB_TABLE: ${self:service}-${opt:stage, self:provider.stage}
+    STORAGE: ${self:custom.bucket}
   iamRoleStatements:
     - Effect: Allow
       Action:

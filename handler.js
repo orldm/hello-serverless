@@ -93,7 +93,7 @@ function getBufferFromS3(file, callback) {
   const buffers = [];
   const s3 = new AWS.S3();
   const stream = s3
-    .getObject({ Bucket: "helloserverless-storage", Key: file })
+    .getObject({ Bucket: process.env.STORAGE, Key: file })
     .createReadStream();
   stream.on("data", (data) => buffers.push(data));
   stream.on("end", () => callback(null, Buffer.concat(buffers)));
